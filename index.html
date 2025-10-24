@@ -1,14 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe | IT Professional Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <nav>
+      <h1 class="logo">John Doe</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm <span>John Doe</span></h2>
+      <p>IT Professional | Network Engineer | Web Developer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
 
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m an IT professional with over 5 years of experience in system administration, networking, and software development. I specialize in building secure, scalable, and efficient IT infrastructures while also developing web-based solutions.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Networking</div>
+      <div class="skill">Linux Administration</div>
+      <div class="skill">Cloud (AWS, Azure)</div>
+      <div class="skill">Python</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Web Development</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Network Monitoring System</h3>
+        <p>Developed a custom SNMP-based monitoring system to track server health and performance.</p>
+      </div>
+      <div class="project-card">
+        <h3>Cloud Infrastructure Setup</h3>
+        <p>Deployed a secure AWS-based environment with automated CI/CD pipelines.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Designed and built a responsive personal portfolio using HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 John Doe. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-

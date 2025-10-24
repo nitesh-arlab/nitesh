@@ -3,81 +3,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nitesh Kumar | IT Professional Portfolio</title>
+  <title>Nitesh Kumar | Full Stack Developer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h1 class="logo">Nitesh Kumar</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="hero">
-    <div class="hero-content">
-      <h2>Hello, I'm <span>Nitesh Kumar</span></h2>
-      <p>IT Professional | Network Engineer | Web Developer</p>
-      <a href="#projects" class="btn">View My Work</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Nitesh Kumar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="text-center text-white d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Hi, I'm <span class="text-info">Nitesh Kumar</span></h1>
+      <p class="lead">Full Stack Software Engineer | Python (Django, FastAPI) | React | AWS</p>
+      <a href="#projects" class="btn btn-info btn-lg mt-3">View My Work</a>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m an IT professional with over 5 years of experience in system administration, networking, and software development. I specialize in building secure, scalable, and efficient IT infrastructures while also developing web-based solutions.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill">Networking</div>
-      <div class="skill">Linux Administration</div>
-      <div class="skill">Cloud (AWS, Azure)</div>
-      <div class="skill">Python</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Web Development</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Network Monitoring System</h3>
-        <p>Developed a custom SNMP-based monitoring system to track server health and performance.</p>
-      </div>
-      <div class="project-card">
-        <h3>Cloud Infrastructure Setup</h3>
-        <p>Deployed a secure AWS-based environment with automated CI/CD pipelines.</p>
-      </div>
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Designed and built a responsive personal portfolio using HTML, CSS, and JavaScript.</p>
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <p class="lead">
+            Innovative and results-driven Full Stack Software Engineer with over 3 years of experience in building scalable,
+            secure, and high-performance web applications. Specialized in Python (Django, FastAPI) and JavaScript (React),
+            with expertise in cloud architecture (AWS, GCP), microservices, and real-time systems.
+          </p>
+          <p>
+            Passionate about solving real-world problems through clean, modular, and testable code in agile environments.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Core Competencies</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <div class="card shadow-sm border-0 p-3 h-100">
+            <h5>Languages</h5>
+            <p>Python, JavaScript, SQL</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card shadow-sm border-0 p-3 h-100">
+            <h5>Backend</h5>
+            <p>Django, Flask, FastAPI, DRF</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card shadow-sm border-0 p-3 h-100">
+            <h5>Frontend</h5>
+            <p>React, Bootstrap, jQuery, AJAX</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card shadow-sm border-0 p-3 h-100">
+            <h5>Databases</h5>
+            <p>PostgreSQL, MySQL, Redis, Elasticsearch</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card shadow-sm border-0 p-3 h-100">
+            <h5>DevOps & Cloud</h5>
+            <p>AWS, GCP, Git, GitHub, CI/CD</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card shadow-sm border-0 p-3 h-100">
+            <h5>System Design</h5>
+            <p>Microservices, WebSockets, Performance Optimization</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Nitesh Kumar. All rights reserved.</p>
+  <!-- Experience Section -->
+  <section id="experience" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Professional Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h5>Senior Python Developer — Segnotech, Jaipur <span class="text-muted">(Jan 2022 – Present)</span></h5>
+          <ul>
+            <li>Built secure, scalable backends using Django and Flask with token-based authentication.</li>
+            <li>Implemented WebSockets for real-time data exchange and Celery for async tasks.</li>
+            <li>Deployed cloud infrastructure on AWS/GCP, reducing manual deployments by 30%.</li>
+            <li>Integrated CI/CD pipelines, advanced encryption, and access control systems.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h5>Web Developer — Monadic OPC Pvt. Ltd., Jaipur <span class="text-muted">(Jul 2021 – Dec 2022)</span></h5>
+          <ul>
+            <li>Developed full-stack web apps using Django and React, improving performance and scalability.</li>
+            <li>Enhanced dashboards using Chart.js and AJAX for real-time analytics.</li>
+            <li>Integrated payment gateways (Razorpay, PayPal) and optimized PostgreSQL queries.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Key Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5>Emango Education</h5>
+              <p>CRM and Admin Dashboard for Education Sector — built scalable APIs and data visualizations.</p>
+              <small class="text-muted">Tech: Django, PostgreSQL, AWS, Redis</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5>Maharashtra Career Portal</h5>
+              <p>Govt. portal integrating Elasticsearch search and IVR/SMS systems for student support.</p>
+              <small class="text-muted">Tech: Django, MySQL, Celery, AJAX</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5>TimeStint</h5>
+              <p>Real-time project management platform with WebSockets for live collaboration.</p>
+              <small class="text-muted">Tech: Django, Redis, PostgreSQL</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5>Security Troops</h5>
+              <p>Workforce management system with attendance, asset logs, and real-time notifications.</p>
+              <small class="text-muted">Tech: Django, Kubernetes, AWS, Redis</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Get In Touch</h2>
+      <p class="mb-4">📍 Jaipur, Rajasthan, India<br>
+        📞 +91 9351559612 | ✉️ <a href="mailto:niteshparmar002@gmail.com">niteshparmar002@gmail.com</a></p>
+
+      <a href="https://linkedin.com" target="_blank" class="btn btn-outline-primary me-2">LinkedIn</a>
+      <a href="https://github.com" target="_blank" class="btn btn-outline-dark">GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Nitesh Kumar. All rights reserved.</p>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
